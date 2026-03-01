@@ -1,19 +1,20 @@
-📚 Library Management System (Qt & SQLite)
-This application is a desktop automation system developed to manage member administration, book inventory tracking, and loan/return processes. The project is built using C++ and the Qt Framework, adhering to object-oriented programming principles.
+# 📚 Library Management System (Qt & SQLite)
 
-🛠️ Technical Features & Capabilities
-Database Architecture: SQLite is used for data storage. The application automatically verifies the database connection upon startup.
-Dynamic Data Listing: Database tables are reflected in real-time onto UI tableView components using QSqlQueryModel.
+This is a **professional-grade** desktop automation system designed to manage **member records**, **book inventory**, and **loan/return workflows**. The architecture is built on **C++** and **Qt**, following strict **OOP principles**.
 
-Advanced Validation:
-Book Deletion: Prevents deletion if a book is currently borrowed by a member.
-Member Deletion: Issues a warning and blocks deletion if a member has unreturned books.
-Debt Calculation Logic: Automatically calculates an overdue fee (debt) for book returns exceeding a 15-day period.
-Inventory Management: Automatically decrements the book count by 1 during a loan and updates the inventory upon return.
+## 🛠️ Core Capabilities & Technical Depth
+* **Robust Database Integration:** Powered by **SQLite**. The system performs an **automatic connection handshake** upon startup.
+* **Live Data Synchronization:** Utilizes `QSqlQueryModel` to reflect database changes to the **UI TableViews** in real-time.
+* **Advanced Logic & Validation:**
+    * **Book Protection:** Prevents deletion of books that are currently marked as **"On Loan"**.
+    * **Member Integrity:** Blocks account deletion if the member has **outstanding/unreturned** books.
+* **Automated Debt Calculation:** Features a built-in logic to compute **overdue fees** for returns exceeding the **15-day limit**.
+* **Smart Inventory Tracking:** Automatically manages stock levels, decrementing on loan and incrementing on return.
 
-📂 Project Structure
-mainwindow.cpp: Manages the main menu and transitions between different modules.
-islemleruye.cpp: Handles member registration, deletion, and update operations.
-islemlerkitap.cpp: Manages inventory and displays historical loan activities for books.
-islemleroduncalma.cpp: Manages the loaning process by matching members with books.
-islemleroduncteslim.cpp: Handles book returns and debt calculation.
+## 📂 Project Architecture
+* `mainwindow.cpp`: Central hub for **navigation** and module switching.
+* `islemleruye.cpp`: Dedicated module for **Member CRUD** operations.
+* `islemlerkitap.cpp`: Inventory management and **historical loan tracking**.
+* `islemleroduncalma.cpp`: Workflow for matching **members with assets**.
+* `islemleroduncteslim.cpp`: Core logic for **returns and financial penalties**.
+---
