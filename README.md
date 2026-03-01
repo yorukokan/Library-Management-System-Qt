@@ -1,6 +1,16 @@
 # 📚 Library Management System (Qt & SQLite)
 
 This is a **professional-grade** desktop automation system designed to manage **member records**, **book inventory**, and **loan/return workflows**. The architecture is built on **C++** and **Qt**, following strict **OOP principles**.
+---
+
+## 📺 Gameplay Demonstration
+Experience the action-packed slicing mechanics:
+
+[▶️ **Click to Watch Gameplay Video**](Library-Management.mp4)
+
+> **Note:** To view the video directly in your browser, simply click on the `Library-Management.mp4` file within the repository.
+
+---
 
 ## 🛠️ Core Capabilities & Technical Depth
 * **Robust Database Integration:** Powered by **SQLite**. The system performs an **automatic connection handshake** upon startup.
